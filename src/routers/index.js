@@ -1,12 +1,19 @@
 import React from 'react';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
+// import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {TransitionPresets, createStackNavigator} from '@react-navigation/stack';
 import {Splash, Login, Home} from '../screens';
 
-const Stack = createNativeStackNavigator();
+const Stack = createStackNavigator();
 
 const Routers = () => {
   return (
-    <Stack.Navigator screenOptions={{headerShown: false}}>
+    <Stack.Navigator
+      initialRouteName="Home"
+      screenOptions={{
+        headerShown: true,
+        gestureEnabled: true,
+        ...TransitionPresets.SlideFromRightIOS,
+      }}>
       <Stack.Screen name="Splash" component={Splash} />
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Login" component={Login} />
