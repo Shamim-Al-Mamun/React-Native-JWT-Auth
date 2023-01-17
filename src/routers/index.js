@@ -10,9 +10,9 @@ const Routers = () => {
     <Stack.Navigator
       initialRouteName="Home"
       screenOptions={{
-        headerShown: false,
+        headerShown: true,
         gestureEnabled: true,
-        ...TransitionPresets.SlideFromRightIOS,
+        ...TransitionPresets.FadeFromBottomAndroid
       }}>
       <Stack.Screen name="Splash" component={Splash} />
       <Stack.Screen name="Home" component={Home} />
