@@ -10,7 +10,7 @@ const Routers = () => {
     <Stack.Navigator
       initialRouteName="Home"
       screenOptions={{
-        headerShown: true,
+        headerShown: false,
         gestureEnabled: true,
         ...TransitionPresets.SlideFromRightIOS,
       }}>
