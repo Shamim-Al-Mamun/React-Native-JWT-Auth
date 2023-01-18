@@ -8,7 +8,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import {user_login} from '../../api/user_api';
+// import {user_login} from '../../api/user_api';
 import {Eye, EyeActive} from '../../assets';
 
 export default function Login({navigation}) {
