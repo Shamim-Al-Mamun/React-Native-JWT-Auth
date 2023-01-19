@@ -65,7 +65,7 @@ export default function Login({navigation}) {
   };
 
   const handleLogin = () => {
-    const checkPassowrd = checkPasswordValidity(password);
+    // const checkPassowrd = checkPasswordValidity(password);
     if (!checkPassowrd) {
       AsyncStorage.setItem('AccessToken', email);
       navigation.replace('Home');
