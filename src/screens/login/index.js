@@ -184,6 +184,6 @@ const styles = StyleSheet.create({
   },
   textFailed: {
     alignSelf: 'flex-end',
-    color: 'red',
+    color: 'orange',
   },
 });
